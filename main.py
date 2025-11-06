@@ -160,9 +160,4 @@ def start(url):
      MAP.close()
 
 
-URL = open("url.txt","r")
-all=URL.read().split("\n")
-for i in range(len(all)):
-    if all[i].strip():
-        print(all[i])
-        start(all[i])
+start(input())
